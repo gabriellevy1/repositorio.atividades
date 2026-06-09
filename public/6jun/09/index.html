@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <form id="id_form">
+        <fieldset>
+            <legend>Cadastro</legend>
+
+            <label for="id_nome">Nome:
+                <input type="text"
+                id="id_nome"
+                placeholder="Digite seu nome: "
+                required
+                minlength="2"
+                maxlength="50"
+                autocomplete="off">
+            </label>
+
+            <button type="submit">Consultar</button>
+            <input type="button" value="Listar" onclick="listarLocalStorage()">
+        </fieldset>
+    </form>
+
+    <div>
+        <fieldset>
+            <legend>Local Storage - Resultado</legend>
+            <div id="id_resultado"></div>
+        </fieldset>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

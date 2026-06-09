@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/treinamento.png" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <h1 class="titulo">Auto Escola - Avaliação</h1>
+        <h2>Bem vindo(a) a auto escola, aqui você passará pelo teste de avaliação de idade</h2>
+        <p>O teste consiste em avaliar sua idade e apresentar se você está apto ou não para começar nossas aulas. Caso tenha uma idade mais avançada será feito o processo de renovação de habilitação em menos tempo
+        </p>
+          <form id="id_form">
+        <label for="id_idade"> Idade:
+            <input type="number"
+            placeholder="Digite sua idade:"
+            name="idade"
+            id="id_idade"
+            class="class_idade"
+            autocomplete="off"
+            autofocus
+            minlength="1"
+            maxlength="3"
+            required
+            >
+            <button class="botao">Verificar</button>
+        </label>
+        <div id="id_resultado"></div>
+    </form>
+    </div>
+    <div class="img">
+        <img src="img/carro.png" alt="Carro da auto escola" id="img1">
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

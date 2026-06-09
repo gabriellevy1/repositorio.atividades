@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #dedede;
+}
+
+
+.cabeca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-family: verdana;
+
+    .logo{
+    font-size: 16px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+    .navegacao{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    font-size: 14px;
+
+    a{
+      color: rgba(0, 0, 0, 0.781);
+      text-decoration: none;
+      transition: 0.4s;
+    }
+
+    a:hover{
+      color: #040080;
+    }
+
+    .contratar{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 12px;
+    background: #292762;
+    color: rgba(255, 255, 255, 0.851);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: verdana;
+    margin: 20px;
+
+    }
+
+    .contratar:hover{
+      background-color: #3630d7;
+      color: rgba(0, 0, 0, 0.756);
+      transition: 0.3s;
+    }
+  }
+
+}
+
+.principal{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .apresentacao{
+  height: 350px;
+  font-family: verdana;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+
+  h3{
+    color: #100c86;
+    margin-bottom: 18px;
+    font-family: "Recursive", sans-serif;
+    font-size: 22px;
+  }
+}
+
+.apresentacaoimg{
+  width: 250px;
+  height: 250px;
+  margin-left: 50px;
+  border-radius: 40px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+  
+}
+
+.sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: verdana;
+  height: 400px;
+  text-align: justify;
+
+  .apresentacaoimg2{
+  width: 250px;
+  height: 250px;
+  margin-left: 50px;
+  border-radius: 40px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-left: 145px;
+}
+
+  .sobremim{
+    display: flex;
+    flex-direction: column;
+
+    h2{
+      color: #040080;
+      margin-bottom: 25px;
+      margin-left: 20px;
+      font-family: "Recursive", sans-serif;
+      font-size: 25px;
+    }
+
+    h3{
+      margin-bottom: 4px;
+      margin-left: 20px;
+    }
+
+    p{
+      margin-right: 100px;
+      margin-left: 20px;
+    }
+  }
+  
+}
+
+.paiCard{
+  margin-top: 70px;
+  height: 540px;
+}
+.tec{
+  text-align: center;
+  font-family: "Recursive", sans-serif;
+  color: #040080;
+  margin-bottom: 60px;
+  font-size: 27px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background: #2d29a7;
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.781);
+  font-family: verdana;
+  padding: 12px;
+  margin: 20px 30px;
+
+  h3{
+  font-family: "Recursive", sans-serif;
+  font-weight: 500;
+}
+
+  p{
+    font-weight: 500;
+    text-align: justify;
+    margin-left: 10px;
+
+  }
+
+
+  .cardimg{
+    width: 30px;
+    height: 30px;
+  }
+  
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.paiForm{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-family: verdana;
+}
+.form {
+    background: rgba(0, 17, 255, 0.313);
+    padding: 30px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border-color: rgb(7, 112, 225);
+    outline: none;
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #1f1c76;
+    color: rgba(255, 255, 255, 0.851);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: verdana;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+}
+
+.rodape{
+  background-color: #1f1c76;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  font-family: verdana;
+  color: rgba(255, 255, 255, 0.851);
+
+  .rodaPe{
+    margin: 40px;
+  }
+}
+
+
+
+

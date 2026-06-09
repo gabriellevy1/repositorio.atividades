@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotérica TEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form">
+        <h1>Fila Lotérica</h1>
+        <label for="nome">Nome:
+            <input type="text"
+            required
+            placeholder="Digite seu nome:"
+            minlength="1"
+            maxlength="50"
+            id="id_nome"
+            class="caixa_entrada"
+            autocomplete="off"
+            >
+        </label>
+
+        <button type="submit">Enviar</button>
+        <input type="button" id="btn_consultar" onclick="listar()" value="Consultar">
+
+        <fieldset id="resultado_espera">
+            <legend>FILA DE ESPERA</legend>
+        </fieldset>
+
+        <br>
+        <input type="button" id="btn_atender" onclick="atender()" value="Atendimento">
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

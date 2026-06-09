@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Dosis:wght@200..800&family=Modak&family=Playwrite+NZ+Basic:wght@100..400&family=Recursive:wght@300..1000&family=Sekuya&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(113, 5, 5, 0.672);
+    font-family: verdana;
+}
+
+.logo{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h5{
+        color: rgba(255, 255, 51, 0.839);
+    }
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset{
+    margin: 8px;
+}
+
+input{
+    margin: 8px;
+    padding: 4px;
+    border: solid 1px;
+    border-radius: 10px;
+    outline: none;
+}
+
+select{
+    margin: 8px 3px;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+button{
+    margin: 14px;
+    padding: 6px;
+    border-radius: 12px;
+    border: solid 1px;
+}
+
+.enviar{
+    background-color: rgba(34, 188, 34, 0.826);
+}
+
+.limpar{
+    background-color: rgba(197, 37, 37, 0.885);
+}
+p{
+    background-color: rgba(255, 255, 69, 0.849);
+    color: rgba(0, 0, 0, 0.805);
+    border-radius: 12px;
+    margin: 8px;
+    padding: 8px;
+    border: solid 2px rgba(154, 0, 0, 0.825);
+
+}

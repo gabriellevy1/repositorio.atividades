@@ -1,0 +1,60 @@
+body{
+    background-color: #dedede;
+    font-family: verdana;
+}
+
+legend{
+    font-size: 18px;
+}
+
+fieldset{
+    padding: 16px;
+    margin: 2px;
+    background-color: rgba(231, 231, 255, 0.503);
+}
+
+input{
+    padding: 4px;
+    border-radius: 20px;
+    border: solid 1px;
+    margin: 2px;
+    outline: none;
+    background-color: rgba(92, 179, 255, 0.191);
+}
+
+
+button{
+    padding: 5px;
+    font-family: verdana;
+    margin-top: 6px;
+    border-radius: 14px;
+    border: none;
+}
+
+p{
+    border: solid 1px;
+    background-color: rgba(231, 231, 255, 0.503);
+    margin:10px;
+}
+
+.cadastro{
+    background-color: rgb(62, 59, 255);
+    color: rgba(255, 255, 255, 0.864);
+}
+
+.limpar{
+    background-color: rgba(209, 193, 193, 0.801);
+}
+
+.cadastro:hover{
+    background-color: rgba(21, 90, 180, 0.917);
+    opacity: 3;
+    transition: 0.2s;
+}
+
+.limpar:hover{
+    background-color: rgba(234, 74, 74, 0.704);
+    opacity: 3;
+    transition: 0.2s;
+}
+

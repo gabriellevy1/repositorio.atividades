@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria - Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pizza.png" type="image/x-icon">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Dosis:wght@200..800&family=Modak&family=Playwrite+NZ+Basic:wght@100..400&family=Recursive:wght@300..1000&family=Sekuya&display=swap');
+</style>
+</head>
+<body>
+    <div class="logo">
+        <h1>Mil Sabores - Pizzaria</h1>
+        <h5>A maior diversidade de sabores!</h5>
+    </div>
+
+    <div class="main">
+        <form id="id_formulario">
+            <label for="id_nome">Nome:
+                <input type="text"
+                id="id_nome"
+                required
+                autocomplete="off"
+                placeholder="Informe seu nome completo"
+                >
+            </label>
+            <br>
+                <fieldset>
+                    <legend>Escolha os ingredientes</legend>
+                    <label for="id_queijo">
+                        <input type="checkbox"
+                        name="ingredientes"
+                        value="Queijo"
+                        id="id_queijo">Queijo
+                    </label>
+                <br>
+        
+                 <label for="id_calabresa">
+                    <input type="checkbox"
+                    name="ingredientes"
+                    value="Calabresa"
+                    id="id_calabresa"> Calabresa
+                </label>
+                <br>
+                <label for="id_tomate">
+                    <input type="checkbox"
+                    name="ingredientes"
+                    value="Tomate"
+                    id="id_tomate"> Tomate
+                </label>
+                <br>
+                <label for="id_cebola">
+                    <input type="checkbox"
+                    name="ingredientes"
+                    value="Cebola"
+                    id="id_cebola"> Cebola
+                </label>
+                <br>
+                <label for="id_molho">
+                    <input type="checkbox"
+                    name="ingredientes"
+                    value="Molho"
+                    id="id_molho"> Molho
+                </label>
+                <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Escolha o tamanho da pizza</legend>
+                <label for="p4">
+                    <input type="radio"
+                    name="tamanho"
+                    id="p4"
+                    value="Pequena">
+                    </label>Pequena (4 fatias)
+                    <br>
+                <label for="m6">
+                    <input type="radio"
+                    name="tamanho"
+                    id="m6"
+                    value="Média">
+                </label>Média (6 fatias)
+                <br>
+                <label for="g8">
+                    <input type="radio"
+                    name="tamanho"
+                    id="g8"
+                    value="Grande">
+                </label>Grande (8 fatias)
+                <br>
+                  <label for="f12">
+                    <input type="radio"
+                    name="tamanho"
+                    id="f12"
+                    value="Familia">
+                </label>Familia (12 fatias)
+                <br>
+                </fieldset>
+            <select name="massa" id="id_massa" required>
+                <option disabled>Selecione uma massa</option>
+                <option value="Integral">Massa Integral</option>
+                <option value="Caseira">Massa Caseira</option>
+                <option value="Napolitana">Massa Napolitana</option>
+            </select>
+            <br>
+            <label for="id_endereco">Endereço:
+                <input type="text"
+                id="id_endereco"
+                required
+                autocomplete="off"
+                placeholder="Informe seu endereço"
+                >
+            </label>
+            <div>
+                <button type="submit" class="enviar">Enviar Pedido</button>
+                <button type="reset" class="limpar">Limpar Pedido</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

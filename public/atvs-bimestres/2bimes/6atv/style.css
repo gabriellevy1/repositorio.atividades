@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(250, 174, 33, 0.851);
+    font-family: verdana;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 12px;
+
+    img{
+    width: 50px;
+    height: 50px;
+}
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 40px;
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        font-size: 20px;
+        #id_nome{
+            font-size: 16px;
+            padding: 3px;
+            border: solid 1px rgba(0, 0, 0, 0.822);
+            border-radius: 6px;
+            outline: none;
+        }
+    }
+}
+
+#cadastrar{
+    width: 272px;
+    height: 35px;
+    margin-top: 8px;
+    border: solid 1px;
+    border-radius: 8px;
+    background-color: rgb(5, 120, 251);
+    color: rgba(0, 0, 0, 0.722);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#cadastrar:hover{
+    background-color: rgba(3, 53, 171, 0.969);
+    color: rgba(206, 206, 206, 0.88);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+#consultar{
+    width: 272px;
+    height: 35px;
+    margin-top: 8px;
+    border: solid 1px;
+    border-radius: 8px;
+    background-color: rgba(251, 235, 5, 0.949);
+    color: rgba(0, 0, 0, 0.722);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#consultar:hover{
+    background-color: rgb(107, 102, 0);
+    color: rgba(206, 206, 206, 0.88);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.tipo_atendimento{
+    display: flex;
+    gap: 40px;
+    margin-top: 8px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.fila_espera{
+    width: 450px;
+
+    #resultado_espera{
+        background-color: rgba(255, 224, 224, 0.918);
+        font: 18px;
+        width: 400px;
+        padding: 6px;
+        margin-top: 12px;
+        border-radius: 8px;
+    }
+
+    #btn_atendido{
+        width: 272px;
+        height: 35px;
+        margin-top: 8px;
+        border: solid 1px;
+        border-radius: 8px;
+        background-color: rgb(251, 26, 5);
+        color: rgba(0, 0, 0, 0.722);
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    #btn_atendido:hover{
+        background-color: rgba(171, 14, 3, 0.969);
+        color: rgba(206, 206, 206, 0.88);
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+
+    #btn_nao_esperou{
+        width: 272px;
+        height: 35px;
+        margin-top: 8px;
+        border: solid 1px;
+        border-radius: 8px;
+        background-color: rgb(251, 62, 5);
+        color: rgba(0, 0, 0, 0.722);
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    #btn_nao_esperou:hover{
+         background-color: rgba(159, 58, 0, 0.969);
+        color: rgba(206, 206, 206, 0.88);
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+}
+
+
+

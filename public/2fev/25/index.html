@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form id="id_formulario">
+        <fieldset>
+            <legend>
+                Cadastro Simples
+            </legend>
+
+            <label for="id_nome"> Nome:
+                <input type="text"
+                placeholder="Informe seu nome:"
+                minlength="5"
+                maxlength="200"
+                required
+                autofocus
+                id="id_nome"
+                class="campo_form"
+                name="nome"
+                >
+            </label>
+            <br>
+
+            <label for="id_idade"> Idade:
+                <input type="number"
+                placeholder="Informe sua idade"
+                minlength="1"
+                maxlength="3"
+                required
+                autofocus
+                id="id_idade"
+                class="campo_form"
+                name="idade"
+                >
+            </label>
+
+            <div class="botoes_form">
+                <button type="submit">Enviar</button>
+                <button type="submit">Limpar</button>
+            </div>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

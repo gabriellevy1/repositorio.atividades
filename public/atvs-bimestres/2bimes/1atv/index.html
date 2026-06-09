@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="id_formulario">
+        <fieldset>
+            <legend>Cadastro</legend>
+
+            <label for="id_nome">Nome:
+                <input type="text"
+                id="id_nome"
+                placeholder="Informe seu nome:"
+                required
+                autocomplete="off">
+
+            </label>
+            <br>
+
+            <label for="id_email">Email:
+                <input type="email"
+                id="id_email"
+                placeholder="Informe seu email:"
+                required
+                autocomplete="off">
+
+            </label>
+            <br>
+
+             <label for="id_idade">Idade:
+                <input type="number"
+                id="id_idade"
+                placeholder="Informe sua idade:"
+                required
+                autocomplete="off">
+
+            </label>
+            <br>
+        
+        <fieldset>
+            <legend>Gênero</legend>
+
+            <label for="m">
+                <input type="radio"
+                name="radio_s"
+                id="m"
+                value="masculino">
+            </label>M
+            <br>
+
+             <label for="f">
+                <input type="radio"
+                name="radio_s"
+                id="f"
+                value="feminino">
+            </label>F
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>CheckBox - Tecnologias</legend>
+
+            <label for="id_java">
+                <input type="checkbox"
+                name="checkbox_tech"
+                value="java"
+                id="id_java">Java
+            </label>
+            <br>
+        
+             <label for="id_js">
+                <input type="checkbox"
+                name="checkbox_tech"
+                value="js"
+                id="id_js"> Javascript
+            </label>
+            <br>
+
+            <label for="id_react">
+                <input type="checkbox"
+                name="checkbox_tech"
+                value="react"
+                id="id_jreact"> React
+            </label>
+            <br>
+
+            <div>
+                <button class="cadastro">Cadastrar</button>
+                <button class="limpar">Limpar Dados</button>
+            </div>
+        </fieldset>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

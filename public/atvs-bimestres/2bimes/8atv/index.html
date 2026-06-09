@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Central</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="banco.png" type="image/x-icon">
+</head>
+<body>
+    <main class="main">
+        <img src="banco.png" alt="Lotérica Central">
+        <h1>Lotérica Central</h1>
+    </main>
+
+    <form id="form" class="form">
+        <div class="name">
+            <label for="id_nome">Nome:
+                <input type="text"
+                required
+                autocomplete="off"
+                minlength="2"
+                maxlength="50"
+                placeholder="Informe seu nome: "
+                id="id_nome"
+                class="classe_nome"
+                >
+            </label>
+
+        <div class="tipo_atendimento">
+            <label for="normal">Normal
+                <input type="radio"
+                required
+                name="tipo_atendimento"
+                id="id_normal"
+                class="caixa_entrada"
+                value="normal">
+            </label>
+
+            <label for="prioritario">Prioritário
+                <input type="radio"
+                required
+                name="tipo_atendimento"
+                id="id_prioritario"
+                class="caixa_entrada"
+                value="prioritario">
+            </label>
+            </div>
+            <button type="submit" id="cadastrar">Cadastrar</button>
+            <button type="button" value="Consultar" id="consultar">Consultar</button>
+        </div>
+
+        <label for="" class="fila_espera">
+            <h1>Fila de Espera</h1>
+            <p>Aguarde seu nome ser chamado e dirija-se a sala informada!</p>
+            <div id="resultado_espera"></div>
+
+            <input
+            type="button" 
+            id="btn_atendido"
+            onclick="atender()"
+            value="Atendido">
+            <input id="btn_nao_esperou"
+            type="button"
+            onclick="nao_esperou()"
+            value="Não aguardou o atendimento"
+            >
+        </label>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
